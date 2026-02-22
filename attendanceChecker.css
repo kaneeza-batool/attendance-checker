@@ -1,0 +1,20 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #343a40;
+}
+
+.btn {
+    margin-left: 9rem;
+}
+
+.container {
+    max-width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}

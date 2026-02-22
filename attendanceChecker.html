@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Checker</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="attendanceChecker.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Attendance Checker</h1>
+
+        <div class="mb-3">
+            <label for="totalClasses" class="form-label">Total Classes</label>
+            <input type="number" class="form-control" id="totalClasses" placeholder="Enter total number of classes">
+        </div>
+
+        <div class="mb-3">
+            <label for="attendedClasses" class="form-label">Classes Attended</label>
+            <input type="number" class="form-control" id="attendedClasses" placeholder="Enter number of classes attended">
+        </div>
+
+        <button class="btn btn-primary" onclick="checkAttendance()">Check Attendance</button>
+    </div>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="attendanceModal" tabindex="-1" aria-labelledby="attendanceModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="attendanceModalLabel">Attendance Result</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modalBody">
+            <!-- Result will be inserted here dynamically -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="attendanceChecker.js"></script>
+</body>
+</html>
